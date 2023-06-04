@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <style>
+        @media screen and (max-width: 900px) {
+            #div_h_v_1 {
+                overflow: visible;
+            }
+        }
+    </style>
+    <div class="fram_1" style="width:200px; min-height:330px; padding:8px;" onclick="ShowBooksDetails('f_id'); return false;">
+        <table style="text-align:left;">
+            <tr> <td colspan="2"> <center> <img src="../images/f_img" style="max-height:180px;" /> </center> </td> </tr>
+            <tr> <td colspan="2"> <h5> f_name </h5> </td> </tr>
+            <tr> <td colspan="2"> <h6> f_author </h6> </td> </tr>
+            <tr> <td colspan="2" style="font-size:10px;"> f_info </td> </tr>
+            <tr>
+                
+               =[
+                    if(f_discount>0)
+                    {
+                        "<td style='text-align:center; color:#a0a0a0; text-decoration:line-through;'>";;f_price;;"</td><td>";;"£";;(f_price-f_discount);;"</td>";;
+                    }
+                    else
+                    {
+                        "<td>";;"£";;f_price;;"</td><td></td>";;
+                    }
+                ]
+                
+                
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+"<div style='text-align:center; color:#a0a0a0; text-decoration:line-through;'>";; (f_price-f_discount);; "</div> <div style='font-weight:bold;'>";; f_price;; "</div>";;

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AtomicItems.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link type="text/css" rel="stylesheet" href="Content/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/MyStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="Scripts/jquery-3.7.0.min.js" ></script>
+    <script type="text/javascript" src="../js/MyJs.js" ></script>
+    <script type="text/javascript" src="../js/MyFunctions.js" ></script>
+
+
+</head>
+<body class="bg_1">
+    <form id="form1" runat="server">
+        <div>
+
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else { x.className = "topnav"; }
+                }
+            </script>
+
+            <div class="topnav" id="myTopnav">
+                <a href="tableview">Table View</a>
+                <a href="horizontallist">Horizontal View</a>
+                <a href="verticalview">Vertical View</a>
+                <a href="gridview">Grid</a>
+                <a href="verticavViewmobile">Mobile</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+
+            <div style="margin-top:-130px; color:white;">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                   <path fill="#333333" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,256C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+                </svg>
+
+                <div style="margin-top:-3px; background-color:#333; text-align:center; padding-bottom:8px;">
+
+                    © Atomic Items 2023. All Rights Reserved.
+
+                </div>
+                
+
+            </div>
+
+            
+            
+                <center>
+                    <div id="bg_modal" class="css_transparent_bg" style="display:none; z-index:10000;">
+
+                        <div id="div_modal"></div>
+
+                    </div>
+                </center>
+
+
+
+        </div>
+    </form>
+</body>
+</html>

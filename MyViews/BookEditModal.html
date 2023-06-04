@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <div class="fram_1" style="width:98%; margin:8px 0px 8px 0px;">
+
+
+        <div style="position:relative; height:40px;">
+            <img src="../images/icons/ic_left.png" onclick="ShowHideSmooth('bg_modal','hide'); return false;"
+                 style="position:absolute; left:8px; top:5px; width:32px; height:32px; padding:8px;" />
+        </div>
+
+        <div class="horizontal_divider_1"></div>
+
+        <div style="margin:8px; padding:8px;">
+
+            <div style="text-align:left; font-weight:bold;"> Name : </div>
+
+            <input id="txt_name" type="text" value="f_name" class="form-control" />
+
+            <div style="text-align:left; font-weight:bold;"> Author : </div>
+
+            <input id="txt_author" type="text" value="f_author" class="form-control" />
+
+            <div style="text-align:left; font-weight:bold;"> Info : </div>
+
+            <textarea id="txt_info" class="form-control"> f_info </textarea>
+     
+        </div>
+
+        <div class="horizontal_divider_1"></div>
+
+        <div class="bg_btn_modal_1">
+
+            <div onclick="BookEdit('f_id'); return false;" class="item_btn_modal_1"> 
+                Confirm 
+            </div>
+            <div  class="item_btn_modal_1" style="background-color:#e6e6e6; width:1px; height:50px;"></div>
+            <div onclick="ShowHideSmooth('bg_modal','hide'); return false;"  class="item_btn_modal_1">
+                Cancel 
+            </div>
+
+        </div>
+
+    </div>
+    
+
+
+
+</body>
+</html>
